@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plying with the Number</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body" class="">
+    <div class="container">
+      <h1 id="ad">Number guessing</h1>
+      <button class="btn" id="restart" onclick="generateTargetNumber()">
+        start game
+      </button>
+      <p id="note">Note :- Must start the game before play</p>
+      <input
+        id="input"
+        type="number"
+        readonly
+        required
+        placeholder="Enter here...."
+      />
+      <p id="message">.</p>
+      <div>
+        <button
+          id="reset"
+          class="btn"
+          type="button"
+          onClick="window.location.reload();"
+        >
+          Reset</button
+        ><button
+          class="btn"
+          id="submitBtn"
+          onclick="checkGuesses()"
+          onmouseover="takeNumber()"
+        >
+          Play
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

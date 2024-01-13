@@ -1,0 +1,59 @@
+
+#body{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ad{
+font-family: 'Borel', cursive;
+color: red;
+}
+
+/* setting background dynamically */
+.bgChange{
+    background-image: url("./fireworks-icegif-2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Styling container*/
+.container{
+    height: 350px;
+    width: 500px;
+    background-color: rgb(240, 248, 255,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(243, 45, 5);
+    
+
+}
+/* styling buttons and input box */
+.btn, #input{
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+#input{
+    cursor: not-allowed;
+
+}
+/* reset button */
+#reset{
+    margin-right: 30px;
+}
+/* Message paragraph */
+#message{
+    color: blue;
+}
+#submitBtn{
+    display: none;
+}
